@@ -1,3 +1,10 @@
-a=5
-b=a+2
-print(b)
+import numpy as np
+import pandas as pd
+
+from pandas_datareader import data, wb
+
+ip = data.DataReader("5_Industry_Portfolios", "famafrench")
+df = ip[0]
+
+
+
